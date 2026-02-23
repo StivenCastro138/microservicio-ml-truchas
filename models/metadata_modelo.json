@@ -1,0 +1,50 @@
+{
+  "features": [
+    "days",
+    "temperature",
+    "ph",
+    "dissolved_oxygen"
+  ],
+  "feature_units": {
+    "days": "d\u00edas desde inicio del ciclo",
+    "temperature": "\u00b0C",
+    "ph": "unidades pH",
+    "dissolved_oxygen": "mg/L"
+  },
+  "targets": [
+    "lengths",
+    "weights"
+  ],
+  "target_units": {
+    "lengths": "cm",
+    "weights": "g"
+  },
+  "peso_gb": 0.7,
+  "peso_rf": 0.3,
+  "metricas_test": {
+    "longitud": {
+      "mae": 0.0251,
+      "rmse": 0.0367,
+      "r2": 0.999985
+    },
+    "peso": {
+      "mae": 0.0059,
+      "rmse": 0.0088,
+      "r2": 1.0
+    }
+  },
+  "importancia_longitud": {
+    "days": 1.0,
+    "temperature": 0.0,
+    "ph": 0.0,
+    "dissolved_oxygen": 0.0
+  },
+  "importancia_peso": {
+    "days": 1.0,
+    "temperature": 0.0,
+    "ph": 0.0,
+    "dissolved_oxygen": 0.0
+  },
+  "version": "2.0.0",
+  "nota": "dissolved_oxygen reemplaza a conductividad (no disponible en dataset)"
+}
